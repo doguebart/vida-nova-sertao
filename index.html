@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vida Nova Sertão</title>
+  </head>
+  <body>
+    <header class="w-full max-h-full shadow">
+      <div
+        class="relative px-4 py-2 lg:p-0 container mx-auto flex items-center justify-between"
+      >
+        <div>
+          <a href="#">
+            <img
+              src="/assets/icones/logo.png"
+              alt="loog do site vida nova sertão"
+              class="size-20"
+            />
+          </a>
+        </div>
+        <div class="lg:hidden">
+          <svg
+            id="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.7em"
+            height="1.7em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="#191a1a"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
+        <nav
+          id="mobile-menu"
+          class="lg:hidden p-6 mobile absolute top-[100%] left-0 container bg-white w-full shadow"
+        >
+          <ul class="flex flex-col gap-4 w-full">
+            <li class="py-2 w-fit text-black text-md">
+              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+                Início
+              </a>
+            </li>
+            <li class="py-2 w-fit text-black text-md">
+              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+                Nossos Projetos
+              </a>
+            </li>
+            <li class="py-2 w-fit text-black text-md">
+              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+                Impacto Social
+              </a>
+            </li>
+            <li class="py-2 w-fit text-black text-md">
+              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+                Voluntários
+              </a>
+            </li>
+            <li class="py-2 w-fit text-black text-md">
+              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+                Fale Conosco
+              </a>
+            </li>
+            <li class="py-2 w-fit text-black text-md">
+              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+                Nossa Região
+              </a>
+            </li>
+            <li class="py-2 w-fit text-md">
+              <a
+                href="#"
+                class="text-white py-2 px-4 rounded-full bg-orange-500 hover:bg-opacity-80 duration-200 easy-in"
+                >Doar</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="hidden py-6 lg:flex desktop">
+          <ul class="flex gap-10 w-full">
+            <li class="py-2">
+              <a
+                href="#"
+                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+              >
+                Início
+              </a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+              >
+                Nossos Projetos
+              </a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+              >
+                Impacto Social
+              </a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+              >
+                Voluntários
+              </a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+              >
+                Fale Conosco
+              </a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+              >
+                Nossa Região
+              </a>
+            </li>
+            <li class="py-2">
+              <a
+                href="#"
+                class="px-4 p-2 bg-orange-500 rounded-full text-white text-md hover:bg-opacity-80 duration-200 easy-in"
+                >Doar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.getElementById("menu-icon");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuIcon.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
