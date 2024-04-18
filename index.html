@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-wrapper {
+        padding-bottom: 60px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #f97316;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 14px;
+        height: 14px;
+        background-color: #f97316;
+      }
+    </style>
     <title>Vida Nova Sertão</title>
   </head>
   <body>
@@ -58,7 +79,10 @@
               </a>
             </li>
             <li class="py-2 w-fit text-black text-md">
-              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+              <a
+                href="#social-impact"
+                class="hover:text-gray-500 duration-200 easy-in"
+              >
                 Impacto Social
               </a>
             </li>
@@ -79,7 +103,7 @@
             </li>
             <li class="py-2 w-fit text-md">
               <a
-                href="#"
+                href="#donate"
                 class="text-white py-2 px-4 rounded-full bg-orange-500 hover:bg-opacity-80 duration-200 easy-in"
                 >Doar</a
               >
@@ -106,7 +130,7 @@
             </li>
             <li class="py-2">
               <a
-                href="#"
+                href="#social-impact"
                 class="lg:text-[18px] text-black hover:text-gray-500 duration-200 easy-in"
               >
                 Impacto Social
@@ -138,7 +162,7 @@
             </li>
             <li class="py-2">
               <a
-                href="#"
+                href="#donate"
                 class="px-4 p-2 bg-orange-500 rounded-full text-white lg:text-[18px] hover:bg-opacity-80 duration-200 easy-in"
                 >Doar</a
               >
@@ -338,6 +362,257 @@
           </div>
         </div>
       </section>
+      <section id="social-impact" class="w-full max-h-full bg-white py-[8rem]">
+        <div class="container mx-auto">
+          <div class="pb-[6rem] lg:pb-[10rem]">
+            <h2
+              class="text-center uppercase text-orange-500 text-3xl font-black"
+            >
+              Impacto <strong class="text-green-600">Social</strong>
+            </h2>
+          </div>
+          <div class="swiper mySwiper lg:hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/agua.jpg"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/botijoes.png"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/cesta-basica.png"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/cestas-basicas.png"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/frutas.png"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/horta.jpg"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/poco-artesiano.png"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[90vw] h-[30vh] md:h-[50vh] mx-auto rounded-md shadow"
+                >
+                  <img
+                    src="/assets/impacto-social/sertao.png"
+                    class="object-cover w-full h-full rounded-md shadow"
+                    alt="impacto social"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="hidden lg:grid grid-cols-4 gap-4">
+            <img
+              src="/assets/impacto-social/agua.jpg"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+            <img
+              src="/assets/impacto-social/botijoes.png"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+            <img
+              src="/assets/impacto-social/cesta-basica.png"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+            <img
+              src="/assets/impacto-social/cestas-basicas.png"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+            <img
+              src="/assets/impacto-social/frutas.png"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+            <img
+              src="/assets/impacto-social/horta.jpg"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+            <img
+              src="/assets/impacto-social/poco-artesiano.png"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+            <img
+              src="/assets/impacto-social/sertao.png"
+              class="rounded-md shadow hover:scale-90 duration-500"
+              alt="impacto social"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="donate" class="w-full max-h-full bg-white py-[8rem]">
+        <div class="container mx-auto">
+          <div class="pb-[6rem] lg:pb-[10rem]">
+            <h2
+              class="text-center uppercase text-orange-500 text-3xl font-black"
+            >
+              Adote um <strong class="text-green-600">Aluno</strong>
+            </h2>
+          </div>
+          <div
+            class="px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+          >
+            <div
+              class="p-10 bg-white shadow rounded-md flex flex-col items-center justify-center gap-6"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="font-medium text-orange-300 text-[22px] text-center leading-[1em]"
+                >
+                  Transforme a vida de
+                </p>
+                <p
+                  class="font-black text-orange-500 text-[30px] text-center leading-[1em]"
+                >
+                  1 criança durante um ano por
+                </p>
+              </div>
+              <div class="flex justify-center text-centergap-2">
+                <span class="self-end text-lg text-green-600 font-black"
+                  >R$</span
+                >
+                <span class="text-8xl text-green-600 font-black">35,00</span>
+              </div>
+              <a
+                href="#"
+                class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full"
+                >Contribuir</a
+              >
+              <p class="text-md text-gray-400">
+                Pagamento feito somente uma vez
+              </p>
+            </div>
+            <div
+              class="p-10 bg-white shadow rounded-md flex flex-col items-center justify-center gap-6"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="font-medium text-orange-300 text-[22px] text-center leading-[1em]"
+                >
+                  Transforme a vida de
+                </p>
+                <p
+                  class="font-black text-orange-500 text-[30px] text-center leading-[1em]"
+                >
+                  2 crianças durante um ano por
+                </p>
+              </div>
+              <div class="flex justify-center text-centergap-2">
+                <span class="self-end text-lg text-green-600 font-black"
+                  >R$</span
+                >
+                <span class="text-8xl text-green-600 font-black">70,00</span>
+              </div>
+              <a
+                href="#"
+                class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full"
+                >Contribuir</a
+              >
+              <p class="text-md text-gray-400">
+                Pagamento feito somente uma vez
+              </p>
+            </div>
+            <div
+              class="p-10 bg-white shadow rounded-md flex flex-col items-center justify-center gap-6"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="font-medium text-orange-300 text-[22px] text-center leading-[1em]"
+                >
+                  Transforme a vida de
+                </p>
+                <p
+                  class="font-black text-orange-500 text-[30px] text-center leading-[1em]"
+                >
+                  3 crianças durante um ano por
+                </p>
+              </div>
+              <div class="flex justify-center text-centergap-2">
+                <span class="self-end text-lg text-green-600 font-black"
+                  >R$</span
+                >
+                <span class="text-8xl text-green-600 font-black">105,00</span>
+              </div>
+              <a
+                href="#"
+                class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full"
+                >Contribuir</a
+              >
+              <p class="text-md text-gray-400">
+                Pagamento feito somente uma vez
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -349,5 +624,7 @@
         });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/swiper.js"></script>
   </body>
 </html>
