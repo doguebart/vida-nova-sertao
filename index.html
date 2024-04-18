@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="global.css" />
     <title>Vida Nova Sertão</title>
   </head>
   <body>
-    <header class="w-full max-h-full shadow">
+    <header class="fixed top-0 bg-white w-full max-h-full shadow">
       <div
         class="relative px-4 py-2 lg:p-0 container mx-auto flex items-center justify-between"
       >
@@ -40,11 +41,11 @@
         </div>
         <nav
           id="mobile-menu"
-          class="lg:hidden p-6 mobile absolute top-[100%] left-0 container bg-white w-full shadow"
+          class="hidden lg:hidden p-6 mobile absolute top-[100%] left-0 container bg-white w-full shadow"
         >
           <ul class="flex flex-col gap-4 w-full">
             <li class="py-2 w-fit text-black text-md">
-              <a href="#" class="hover:text-gray-500 duration-200 easy-in">
+              <a href="#hero" class="hover:text-gray-500 duration-200 easy-in">
                 Início
               </a>
             </li>
@@ -86,8 +87,8 @@
           <ul class="flex gap-10 w-full">
             <li class="py-2">
               <a
-                href="#"
-                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+                href="#hero"
+                class="lg:text-[18px] text-black hover:text-gray-500 duration-200 easy-in"
               >
                 Início
               </a>
@@ -95,7 +96,7 @@
             <li class="py-2">
               <a
                 href="#"
-                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+                class="lg:text-[18px] text-black hover:text-gray-500 duration-200 easy-in"
               >
                 Nossos Projetos
               </a>
@@ -103,7 +104,7 @@
             <li class="py-2">
               <a
                 href="#"
-                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+                class="lg:text-[18px] text-black hover:text-gray-500 duration-200 easy-in"
               >
                 Impacto Social
               </a>
@@ -111,7 +112,7 @@
             <li class="py-2">
               <a
                 href="#"
-                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+                class="lg:text-[18px] text-black hover:text-gray-500 duration-200 easy-in"
               >
                 Voluntários
               </a>
@@ -119,7 +120,7 @@
             <li class="py-2">
               <a
                 href="#"
-                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+                class="lg:text-[18px] text-black hover:text-gray-500 duration-200 easy-in"
               >
                 Fale Conosco
               </a>
@@ -127,7 +128,7 @@
             <li class="py-2">
               <a
                 href="#"
-                class="text-md text-black hover:text-gray-500 duration-200 easy-in"
+                class="lg:text-[18px] text-black hover:text-gray-500 duration-200 easy-in"
               >
                 Nossa Região
               </a>
@@ -135,7 +136,7 @@
             <li class="py-2">
               <a
                 href="#"
-                class="px-4 p-2 bg-orange-500 rounded-full text-white text-md hover:bg-opacity-80 duration-200 easy-in"
+                class="px-4 p-2 bg-orange-500 rounded-full text-white lg:text-[18px] hover:bg-opacity-80 duration-200 easy-in"
                 >Doar</a
               >
             </li>
@@ -143,7 +144,63 @@
         </nav>
       </div>
     </header>
-
+    <main>
+      <section id="hero" class="w-full h-screen flex items-center">
+        <div class="px-4 container mx-auto lg:flex lg:items-center lg:gap-10">
+          <div class="lg:w-1/2 flex flex-col gap-6">
+            <h1 class="text-6xl text-orange-500 font-black">
+              Vida Nova Sertão
+            </h1>
+            <p class="lg:hidden text-pretty lg:text-[18px] text-gray-500">
+              Estamos há 07 anos no Sertão do Piauí, na cidade de São Francisco
+              de Assis do Piauí. Temos visto um propósito de Deus sobre este
+              lugar. Com tantos acontecimentos extraordinários neste lugar,
+              verdadeiramente temos visto a terra seca florescer.
+            </p>
+            <p class="hidden lg:flex text-pretty lg:text-[18px] text-gray-500">
+              Estamos há 07 anos no Sertão do Piauí, na cidade de São Francisco
+              de Assis do Piauí. Temos visto um propósito de Deus sobre este
+              lugar. Com tantos acontecimentos extraordinários neste lugar,
+              verdadeiramente temos visto a terra seca florescer. <br />
+              <br />
+              Nossa paixão é servir o povo sertanejo e com projetos de impacto
+              social temos levado o amor de Deus em atitudes. Em todos esses
+              anos temos aprendido e crescido juntos, vivendo experiências
+              transformadoras de vidas. Cada parceria, cada mantedor e cada
+              voluntário(a) fortalece o avanço do reino pelo sertão brasileiro.
+            </p>
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="lg:text-[18px] w-fit rounded-full py-2 px-4 bg-orange-500 text-white hover:bg-opacity-80 duration-200 easy-in"
+                >Adote Um Aluno</a
+              >
+              <a
+                href="#"
+                class="bg-orange-500 p-2 rounded-full hover:bg-opacity-80 duration-200 easy-in"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.5em"
+                  height="1.5em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#fff"
+                    d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="hidden lg:flex w-1/2">
+            <img
+              src="/assets/hero-image.png"
+              class="w-full"
+              alt="imagem da página principal do site Vida Nova Sertão"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const menuIcon = document.getElementById("menu-icon");
