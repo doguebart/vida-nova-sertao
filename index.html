@@ -33,6 +33,18 @@
         height: 14px;
         background-color: #f97316;
       }
+
+      .menu-icon,
+      .close-icon {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      #menu-icon-container.hidden .menu-icon,
+      #close-icon-container.hidden .close-icon {
+        opacity: 0;
+        visibility: hidden;
+      }
     </style>
     <title>Vida Nova Sertão</title>
   </head>
@@ -50,13 +62,14 @@
             />
           </a>
         </div>
-        <div class="lg:hidden">
+        <div class="lg:hidden" id="menu-icon-container">
           <svg
             id="menu-icon"
             xmlns="http://www.w3.org/2000/svg"
             width="1.7em"
             height="1.7em"
             viewBox="0 0 24 24"
+            class="menu-icon"
           >
             <path
               fill="none"
@@ -65,6 +78,21 @@
               stroke-linejoin="round"
               stroke-width="2"
               d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
+
+        <div class="lg:hidden hidden" id="close-icon-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.7em"
+            height="1.7em"
+            viewBox="0 0 24 24"
+            class="close-icon"
+          >
+            <path
+              fill="#191a1a"
+              d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
             />
           </svg>
         </div>
@@ -220,7 +248,8 @@
                 >Adote Um Aluno</a
               >
               <a
-                href="#"
+                href="https://wa.me/5589994521604"
+                target="_blank"
                 class="bg-orange-500 p-2 rounded-full hover:bg-opacity-80 duration-200 easy-in"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -559,7 +588,8 @@
                 <span class="text-8xl text-green-600 font-black">35</span>
               </div>
               <a
-                href="#"
+                href="https://cobranca.picpay.com/p/1702400710657892c68e2fe"
+                target="_blank"
                 class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full lg:text-[18px]"
                 >Contribuir</a
               >
@@ -589,7 +619,8 @@
                 <span class="text-8xl text-green-600 font-black">70</span>
               </div>
               <a
-                href="#"
+                href="https://cobranca.picpay.com/p/17024009036578938776002"
+                target="_blank"
                 class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full lg:text-[18px]"
                 >Contribuir</a
               >
@@ -619,7 +650,8 @@
                 <span class="text-8xl text-green-600 font-black">105</span>
               </div>
               <a
-                href="#"
+                href="https://cobranca.picpay.com/p/17024021386578985abcd21"
+                target="_blank"
                 class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full lg:text-[18px]"
                 >Contribuir</a
               >
@@ -649,7 +681,8 @@
                 <span class="text-8xl text-green-600 font-black">90</span>
               </div>
               <a
-                href="#"
+                href="https://cobranca.picpay.com/p/17024021956578989338e7b"
+                target="_blank"
                 class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full lg:text-[18px]"
                 >Contribuir</a
               >
@@ -679,7 +712,8 @@
                 <span class="text-8xl text-green-600 font-black">180</span>
               </div>
               <a
-                href="#"
+                href="https://cobranca.picpay.com/p/1702402243657898c3707ca"
+                target="_blank"
                 class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full lg:text-[18px]"
                 >Contribuir</a
               >
@@ -709,7 +743,8 @@
                 <span class="text-8xl text-green-600 font-black">270</span>
               </div>
               <a
-                href="#"
+                href="https://cobranca.picpay.com/p/170240235265789930b770c"
+                target="_blank"
                 class="bg-orange-500 w-fit py-2 px-4 text-white rounded-full lg:text-[18px]"
                 >Contribuir</a
               >
@@ -1142,7 +1177,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/imosp.jpg"
                       class="object-cover"
@@ -1156,7 +1191,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/novo-sertao.jpg"
                       class="object-cover"
@@ -1170,7 +1205,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/personalize.jpg"
                       class="object-cover"
@@ -1184,7 +1219,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/prof-solange.jpg"
                       class="object-cover"
@@ -1198,7 +1233,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/sim.jpg"
                       class="object-cover"
@@ -1212,7 +1247,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/verbodavida.jpg"
                       class="object-cover"
@@ -1226,7 +1261,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/bola-no-pe.png"
                       class="object-cover"
@@ -1240,7 +1275,7 @@
                 <div
                   class="w-[90vw] mx-auto max-h-full p-10 bg-white rounded-md shadow flex flex-col items-center justify-center gap-4"
                 >
-                  <div class="size-32">
+                  <div class="size-32 flex items-center justify-center">
                     <img
                       src="/assets/parceiros/igreja-presbiteriana.png"
                       class="object-cover"
@@ -1470,7 +1505,8 @@
           >
           <div class="flex items-center gap-4">
             <a
-              href="#"
+              href="https://www.youtube.com/@vidanovasertao"
+              target="_blank"
               class="flex items-center justify-center size-8 rounded-md bg-orange-500 hover:bg-opacity-80 duration-200 easy-in"
             >
               <svg
@@ -1486,7 +1522,8 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/vidanovasertao"
+              target="_blank"
               class="flex items-center justify-center size-8 rounded-md bg-orange-500 hover:bg-opacity-80 duration-200 easy-in"
             >
               <svg
@@ -1502,7 +1539,25 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/vidanovasertao/"
+              target="_blank"
+              class="flex items-center justify-center size-8 rounded-md bg-orange-500 hover:bg-opacity-80 duration-200 easy-in"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/5589994521604"
+              target="_blank"
               class="flex items-center justify-center size-8 rounded-md bg-orange-500 hover:bg-opacity-80 duration-200 easy-in"
             >
               <svg
@@ -1525,16 +1580,40 @@
         </div>
       </div>
     </footer>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const menuIcon = document.getElementById("menu-icon");
+        const menuIconContainer = document.getElementById(
+          "menu-icon-container"
+        );
+        const closeIconContainer = document.getElementById(
+          "close-icon-container"
+        );
         const mobileMenu = document.getElementById("mobile-menu");
+        const mobileMenuLinks = document.querySelectorAll("#mobile-menu a");
 
-        menuIcon.addEventListener("click", function () {
+        menuIconContainer.addEventListener("click", function () {
           mobileMenu.classList.toggle("hidden");
+          menuIconContainer.classList.toggle("hidden");
+          closeIconContainer.classList.toggle("hidden");
+        });
+
+        closeIconContainer.addEventListener("click", function () {
+          mobileMenu.classList.add("hidden");
+          menuIconContainer.classList.remove("hidden");
+          closeIconContainer.classList.add("hidden");
+        });
+
+        mobileMenuLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+            menuIconContainer.classList.remove("hidden");
+            closeIconContainer.classList.add("hidden");
+          });
         });
       });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/swiper.js"></script>
     <script src="/swiper2.js"></script>
